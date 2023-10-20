@@ -66,7 +66,7 @@ function buscar() {
            var translatedSituation = translateSituation(jsonData[i][4]);
            
            // comparar a sala selecionada com a sala no resultado
-           var resultBackground = (jsonData[i][7].toLowerCase() == selectedRoom) ? '#0080005d' : '#f51515af'; // converter para minúsculas antes de comparar
+           var resultBackground = (jsonData[i][7].toLowerCase() == selectedRoom.toLowerCase()) ? '#0080005d' : '#f51515af'; // converter para minúsculas antes de comparar
            
            document.getElementById('resultado').style.backgroundColor = resultBackground; // alterar a cor de fundo
            document.getElementById('resultado').innerHTML = 'Número de patrimônio: ' + jsonData[i][0] + '-' + jsonData[i][1] +'<br>' +
